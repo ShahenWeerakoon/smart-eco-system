@@ -1,8 +1,18 @@
-export default function Home() {
+// src/app/page.tsx
+import Hero from "@/components/home/Hero";
+import LatestArrivals from "@/components/home/LatestArrivals";
+import ShopCategory from "@/components/home/ShopCategory";
+import TshirtCollection from "@/components/home/TshirtCollection";
+import QuoteSection from "@/components/home/QuoteSection";
+
+export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center p-10">
-      <h1 className="text-3xl font-bold">Clothing Store</h1>
-      <p className="text-gray-600 mt-2">Welcome to our simple WooCommerce shop!</p>
+    <main>
+      <Hero />
+      <LatestArrivals />
+      <ShopCategory />
+      <TshirtCollection />
+      <QuoteSection />
     </main>
   );
 }
